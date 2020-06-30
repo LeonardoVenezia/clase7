@@ -1,0 +1,22 @@
+.padre {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.hijo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intermedio {
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+    margin-left: 50px;
+}
