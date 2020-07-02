@@ -1,0 +1,36 @@
+/* p::first-letter {
+    color: red;
+}
+p:first-child {
+    color: blue;
+} */
+
+p + p {
+    color: red;
+}
+
+* {
+    font-size: 22px;
+}
+
+[name="nombres"] {
+    color: blue;
+}
+
+/* :active se dispara para el momento en el que se hace click sobre el link */
+a:active {
+    color: red;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+.input:focus {
+    border: 10px solid blue;
+    background-color: red;
+}
