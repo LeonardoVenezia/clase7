@@ -33,5 +33,6 @@ a:visited {
 .input:focus {
     border: 10px solid blue;
     background-color: red;
+    color: green;
 }
 
