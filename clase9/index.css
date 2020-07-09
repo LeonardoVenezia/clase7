@@ -1,0 +1,44 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex input {
+    height: 22px;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+}
+.lista li {
+    margin-left: 16px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.corazon {
+    font-size: 200px;
+}
+
+
+@media (min-width: 300px) {
+    .corazon {
+        color:red;
+    }
+    .menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 700px) {
+    .corazon {
+        font-size: 50px;
+        color: blue;
+    }
+    .menu {
+        /* display: block; */
+        background-color: violet;
+    }
+}
