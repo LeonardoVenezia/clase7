@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.logo {
+    height: 100px;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.lista li {
+    padding-left: 16px;
+}
+
+
+
+/* transiciones */
+
+.lista li {
+    transition-property: font-size color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.lista li:hover {
+    font-size: 32px;
+    color: red;
+}
+
+/* Transformaciones */
+
+.logo {
+    transition-property: transform;
+    transition-duration: 1s;
+    /* transform: translate(0 ,0); */
+    /* transform: skew(20deg, 20deg); */
+    transform: scale(1);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* transform: translate(100px ,100px); */
+}
+
+
+/* animaciones */
+
+/* 
+https://css-tricks.com/almanac/properties/a/animation/
+@keyframes
+animation-timing-function	ease, ease-out, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) (e.g. cubic-bezier(0.5, 0.2, 0.3, 1.0))
+animation-duration	Xs or Xms
+animation-delay	Xs or Xms
+animation-iteration-count	X
+animation-fill-mode	forwards, backwards, both, none
+animation-direction	normal, alternate
+animation-play-state	paused, running, running
+*/
+
+@keyframes nombreAnimacion {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+.animaciones {
+    height: 300px;
+    animation-name: nombreAnimacion;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    /* animation-play-state: paused; */
+    animation-direction: alternate-reverse;
+}
+
+.animaciones:hover {
+    /* animation-play-state: running; */
+}
+
+
+/* variables */
+
+:root {
+    --color-primary: green;
+    --color-secundary: blue;
+}
+
+.variables {
+    --variable: 100px;
+}
+
+.variables .uno{
+    height: 200px;
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+}
+
+.variables .dos {
+    font-size: var(--variable);
+}
+
+
+
+
+
+@media screen and (min-width: 300px)  and (orientation: landscape) {
+    .header {
+        background-color: green;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        background-color: red;
+        max-width: 1000px;
+    }
+}
