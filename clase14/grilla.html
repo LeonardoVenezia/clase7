@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+    gap: 10px 50px;
+}
+.grilla div {
+    background-image: linear-gradient(45deg, #2193b0, #6dd5ed);
+}
+.uno {
+    grid-column: 1/3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-row: 1/1;
+}
+
+.dos {
+    grid-column: 3/3;
+    grid-row: 1/3;
+}
+
+.cinco {
+    grid-column: 1/4;
+    grid-row: 3/3;
+}
+    </style>
+</head>
+<body>
+
+<div class="grilla">
+    <div class="uno">
+        <p>Item número uno</p>
+    </div>
+    <div class="dos">
+        <p>Item número dos</p>
+    </div>
+    <div class="tres">
+        <p>Item número tres</p>
+    </div>
+    <div class="cuatro">
+        <p>Item número cuatro</p>
+    </div>
+    <div class="cinco">
+        <p>Item número cinco</p>
+    </div>
+</div>
+
+</body>
+</html>
