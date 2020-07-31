@@ -1,0 +1,18 @@
+@import 'variables.scss';
+// :root {
+//     --variable: red;
+// }
+
+$variable: blue;
+.contenedor {
+    height: 200px;
+    background-color: $variable;
+    // background-color: var(--variable, red);
+    .titulo {
+        font-size: 50px;
+        color: blue;
+    }
+    .titulito {
+        @extend %titulos;
+    }
+}

@@ -1,0 +1,16 @@
+.contenedor .titulito {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.contenedor {
+  height: 200px;
+  background-color: blue;
+}
+
+.contenedor .titulo {
+  font-size: 50px;
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */

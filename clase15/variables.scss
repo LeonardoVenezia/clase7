@@ -1,0 +1,9 @@
+$variable: red;
+$colorTitulo: violet;
+
+
+%titulos {
+    color: $variable;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
